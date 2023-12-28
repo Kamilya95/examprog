@@ -4,23 +4,30 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.exam.Controller.AuthController">
    <children>
-      <Label fx:id="registrateLbl" layoutX="226.0" layoutY="299.0" text="Зарегистрироваться">
+      <Label fx:id="registrateLbl" layoutX="96.0" layoutY="295.0" text="Зарегистрироваться">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
-      <TextField fx:id="loginField" layoutX="203.0" layoutY="130.0" prefHeight="33.0" prefWidth="195.0" promptText="Логин" stylesheets="@styles/textfield.css" />
-      <Button fx:id="btnSignIn" layoutX="203.0" layoutY="241.0" mnemonicParsing="false" prefWidth="195.0" stylesheets="@styles/button.css" text="Войти" />
-      <Label layoutX="217.0" layoutY="35.0" text="Авторизация">
+      <TextField fx:id="loginField" layoutX="73.0" layoutY="126.0" prefHeight="33.0" prefWidth="195.0" promptText="Логин" stylesheets="@styles/textfield.css" />
+      <Button fx:id="btnSignIn" layoutX="73.0" layoutY="237.0" mnemonicParsing="false" prefWidth="195.0" stylesheets="@styles/button.css" text="Войти" />
+      <Label layoutX="87.0" layoutY="31.0" text="Авторизация">
          <font>
             <Font name="System Bold" size="28.0" />
          </font>
       </Label>
-      <PasswordField fx:id="passwordField" layoutX="203.0" layoutY="180.0" prefHeight="33.0" prefWidth="195.0" promptText="Пароль" stylesheets="@styles/textfield.css" />
+      <PasswordField fx:id="passwordField" layoutX="73.0" layoutY="176.0" prefHeight="33.0" prefWidth="195.0" promptText="Пароль" stylesheets="@styles/textfield.css" />
+      <ImageView fitHeight="201.0" fitWidth="214.0" layoutX="350.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/free-icon-place-2555572.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
